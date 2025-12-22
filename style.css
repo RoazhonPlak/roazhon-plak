@@ -1,0 +1,107 @@
+:root {
+    --primary: #4A6984; /* Acier Bleuté */
+    --accent: #B35A38; /* Terre Cuite / Brique */
+    --dark: #1A1A1B; /* Industriel */
+    --light-plaster: #F9F8F6; /* Blanc Plâtre */
+    --text: #2C3E50;
+    --border: #D1D9E0;
+    --line-weight: 2px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    line-height: 1.8;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* TEXTURES */
+.section-plaster {
+    background-color: var(--light-plaster);
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+.bg-light { background-color: var(--light-plaster); }
+.bg-dark { background-color: var(--dark); color: #fff; }
+
+/* NAV */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.98);
+    z-index: 1000;
+}
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-family: 'Archivo', sans-serif; font-size: 22px; text-transform: uppercase; }
+.logo span { color: var(--primary); font-weight: 800; }
+
+nav ul { display: flex; list-style: none; gap: 25px; margin: 0; }
+nav a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* HERO */
+.hero { padding: 100px 0; }
+h1 { font-family: 'Archivo', sans-serif; font-size: clamp(32px, 7vw, 60px); line-height: 1.1; margin-bottom: 20px; color: var(--dark); }
+.subtitle { font-size: 18px; color: var(--primary); font-weight: 600; margin-bottom: 25px; }
+.divider { width: 80px; height: var(--line-weight); background: var(--accent); margin-bottom: 30px; }
+.accroche { font-size: 20px; max-width: 650px; color: #666; font-weight: 300; }
+
+/* TITRES */
+.section-padding { padding: 90px 0; }
+h2 { font-family: 'Archivo', sans-serif; font-size: 30px; margin: 10px 0 50px; position: relative; display: inline-block; text-transform: uppercase; }
+h2::after { content: ""; position: absolute; bottom: -12px; left: 0; width: 60px; height: var(--line-weight); background: var(--accent); }
+.section-tag { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 2px; display: block; }
+
+/* GRIDS */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+/* CARDS PARCOURS */
+.grid-parcours { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: center; text-align: left; }
+.timeline { margin-top: 30px; border-left: 1px solid var(--border); padding-left: 25px; }
+.time-item { margin-bottom: 25px; position: relative; }
+.time-item::before { content: ""; position: absolute; left: -30px; top: 8px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+.time-item strong { display: block; font-family: 'Archivo'; font-size: 13px; color: var(--primary); margin-bottom: 5px; }
+.parcours-quote { background: #fff; padding: 40px; border: 1px solid var(--border); border-radius: 0 30px 0 30px; }
+blockquote { font-family: 'Archivo'; font-size: 20px; line-height: 1.4; color: var(--dark); margin: 0; position: relative; }
+
+/* CARDS PRESTATIONS */
+.card, .card-presta { padding: 35px; border: 1px solid var(--border); background: #fff; text-align: left; }
+.card-num { font-family: 'Archivo'; color: #f2f2f2; font-size: 45px; position: absolute; top: 10px; right: 20px; z-index: 1; }
+.card h3, .card-presta h3 { font-family: 'Archivo'; font-size: 17px; margin-bottom: 15px; position: relative; z-index: 2; text-transform: uppercase; }
+.card-presta ul { list-style: none; padding: 0; }
+.card-presta li { font-size: 14px; margin-bottom: 8px; }
+.card-presta li::before { content: "﹂"; color: var(--accent); margin-right: 8px; font-weight: bold; }
+.voute-highlight { border-left: 2px solid var(--accent); padding-left: 15px; margin-bottom: 20px; font-style: italic; color: var(--primary); font-size: 14px; font-weight: 600; }
+
+/* PORTFOLIO */
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
+.portfolio-item { position: relative; height: 280px; overflow: hidden; border: 1px solid var(--border); }
+.portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.4s; }
+.portfolio-item:hover img { transform: scale(1.05); }
+.portfolio-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(74, 105, 132, 0.9); padding: 12px; transform: translateY(100%); transition: 0.3s; }
+.portfolio-item:hover .portfolio-overlay { transform: translateY(0); }
+.portfolio-overlay span { color: #fff; font-family: 'Archivo'; font-size: 11px; text-transform: uppercase; }
+
+/* CONTACT */
+.contact-box { background: #fff; padding: 50px; max-width: 750px; margin: 0 auto; border: 1px solid var(--border); }
+.contact-form { display: grid; gap: 15px; margin-top: 25px; }
+.contact-form input, .contact-form select, .contact-form textarea { padding: 12px; border: 1px solid var(--border); font-family: inherit; }
+.cta-button { display: inline-block; background: var(--primary); color: #fff; padding: 15px 30px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; transition: 0.3s; }
+.cta-button:hover { background: var(--dark); transform: translateY(-2px); }
+
+/* FOOTER */
+footer { padding: 50px 0; text-align: center; color: #888; font-size: 12px; }
+
+@media (max-width: 768px) {
+    .grid-parcours { grid-template-columns: 1fr; }
+    h1 { font-size: 35px; }
+}
+
