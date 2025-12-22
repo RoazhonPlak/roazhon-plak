@@ -21,11 +21,11 @@ header {
 
 .header-frise {
     width: 100%;
-    height: 25px;
+    height: 30px; /* Augmenté de 25 à 30 pour mobile */
     background-color: var(--primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23FFFFFF'%3E%3Cpath d='M50 15 L60 28 L50 42 L40 28 Z M10 45 L30 38 L45 45 L30 52 Z M90 45 L70 38 L55 45 L70 52 Z M50 45 L65 95 L50 80 L35 95 Z'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
-    background-size: 18px 18px;
+    background-size: 20px 20px; /* Hermines légèrement plus grandes */
     background-position: center;
 }
 
@@ -101,21 +101,20 @@ h2 { font-family: 'Archivo', sans-serif; font-size: 28px; margin-bottom: 30px; }
 .pic:hover img { transform: scale(1.05); }
 
 .zoom-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 9999; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
-#zoomImg { max-width: 100%; max-height: 85vh; object-fit: contain; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
-.zoom-close { position: absolute; top: 15px; right: 25px; color: white; font-size: 40px; cursor: pointer; font-weight: bold; }
+#zoomImg { max-width: 100%; max-height: 85vh; object-fit: contain; }
+.zoom-close { position: absolute; top: 15px; right: 25px; color: white; font-size: 40px; cursor: pointer; }
 
 /* Contact */
 .contact-flex { display: flex; flex-direction: column; gap: 40px; }
-.form-container { background: white; padding: 30px; border-radius: 2px; }
+.form-container { background: white; padding: 30px; }
 input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; font-family: inherit; font-size: 15px; color: #333; }
 
-.cta-button { background: var(--accent); color: white; padding: 16px; text-transform: uppercase; font-weight: 700; font-size: 12px; border: none; cursor: pointer; display: block; text-align: center; text-decoration: none; transition: opacity 0.2s; }
-.cta-button:hover { opacity: 0.9; }
+.cta-button { background: var(--accent); color: white; padding: 16px; text-transform: uppercase; font-weight: 700; font-size: 12px; border: none; cursor: pointer; display: block; text-align: center; text-decoration: none; }
 
-footer { padding: 40px 0; text-align: center; font-size: 12px; color: #999; border-top: 1px solid rgba(0,0,0,0.05); }
+footer { padding: 40px 0; text-align: center; font-size: 12px; color: #999; }
 
-/* Desktop Adjustments */
 @media (min-width: 992px) {
+    .header-frise { height: 25px; background-size: 18px 18px; } /* Retour à la taille fine sur PC */
     .nav-container { flex-direction: row; justify-content: space-between; padding: 10px 15px; }
     .logo-wrapper { margin-bottom: 0; }
     .logo { font-size: 24px; }
@@ -124,5 +123,4 @@ footer { padding: 40px 0; text-align: center; font-size: 12px; color: #999; bord
     .hero { padding: 100px 0 60px; }
     .gallery { grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .contact-flex { flex-direction: row; align-items: flex-start; }
-    .contact-info, .form-container { flex: 1; }
 }
