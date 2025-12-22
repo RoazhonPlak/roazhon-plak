@@ -1,6 +1,7 @@
 :root {
     --primary: #1A1A1B;
-    --accent: #4A6984; 
+    --acier: #4A6984; 
+    --terracotta: #B35A44;
     --bg-light: #F9F9F9;
 }
 
@@ -21,11 +22,11 @@ header {
 
 .header-frise {
     width: 100%;
-    height: 30px; /* Augmenté de 25 à 30 pour mobile */
+    height: 30px;
     background-color: var(--primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23FFFFFF'%3E%3Cpath d='M50 15 L60 28 L50 42 L40 28 Z M10 45 L30 38 L45 45 L30 52 Z M90 45 L70 38 L55 45 L70 52 Z M50 45 L65 95 L50 80 L35 95 Z'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
-    background-size: 20px 20px; /* Hermines légèrement plus grandes */
+    background-size: 20px 20px;
     background-position: center;
 }
 
@@ -46,11 +47,11 @@ header {
 .hermine-logo {
     width: 32px;
     height: 32px;
-    color: var(--primary);
+    color: var(--primary); /* Hermines Logo en Noir */
 }
 
 .logo { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 800; }
-.logo span { color: var(--accent); }
+.logo span { color: var(--acier); }
 
 .nav-links { 
     display: flex; 
@@ -61,23 +62,26 @@ header {
 }
 .nav-links a { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 11px; text-transform: uppercase; }
 
-/* Sections */
+/* Hero Section */
 .hero { padding: 40px 0 30px; }
 h1 { font-family: 'Archivo', sans-serif; font-size: clamp(26px, 9vw, 50px); line-height: 1.1; margin-bottom: 20px; }
-.subtitle { color: var(--accent); font-weight: 600; font-size: 16px; margin-bottom: 5px; }
-.divider { width: 35px; height: 4px; background: var(--accent); margin: 20px 0; }
+.subtitle { color: var(--acier); font-weight: 600; font-size: 16px; margin-bottom: 5px; }
+.divider { width: 35px; height: 4px; background: var(--terracotta); margin: 20px 0; } /* Ligne Terracotta */
 .accroche { font-size: 16px; color: #333; margin-bottom: 30px; }
 
 .section-padding { padding: 60px 0; }
 .bg-light { background: var(--bg-light); }
 .bg-dark { background: var(--primary); color: white; }
-.tag { text-transform: uppercase; font-size: 10px; font-weight: 700; color: var(--accent); letter-spacing: 2px; margin-bottom: 10px; display: block; }
-h2 { font-family: 'Archivo', sans-serif; font-size: 28px; margin-bottom: 30px; }
 
-/* Cartes et Puces Hermines */
+.tag { text-transform: uppercase; font-size: 10px; font-weight: 700; color: var(--acier); letter-spacing: 2px; margin-bottom: 10px; display: block; } /* Tags en Acier */
+.title-acier { color: var(--acier); font-family: 'Archivo', sans-serif; font-size: 28px; margin-bottom: 30px; } /* Titres de sections en Acier */
+
+/* Cartes et Puces Hermines Noires */
 .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .card-simple, .card-presta { background: white; padding: 30px; border: 1px solid #eee; height: 100%; color: var(--primary); }
-.card-presta h3 { margin-bottom: 15px; font-size: 16px; border-left: 3px solid var(--accent); padding-left: 12px; text-transform: uppercase; }
+
+.border-terra { border-left: 3px solid var(--terracotta) !important; } /* Lignes de titres en Terracotta */
+.card-presta h3 { margin-bottom: 15px; font-size: 16px; padding-left: 12px; text-transform: uppercase; color: var(--acier); }
 
 .card-presta ul { list-style: none; font-size: 14px; color: #444; }
 .card-presta ul li { position: relative; padding-left: 25px; margin-bottom: 8px; }
@@ -88,13 +92,13 @@ h2 { font-family: 'Archivo', sans-serif; font-size: 28px; margin-bottom: 30px; }
     top: 4px;
     width: 14px; 
     height: 14px; 
-    background-color: var(--accent);
+    background-color: var(--primary); /* Hermines de listes en Noir */
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 15 L60 28 L50 42 L40 28 Z M10 45 L30 38 L45 45 L30 52 Z M90 45 L70 38 L55 45 L70 52 Z M50 45 L65 95 L50 80 L35 95 Z'/%3E%3C/svg%3E") no-repeat center;
     -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 15 L60 28 L50 42 L40 28 Z M10 45 L30 38 L45 45 L30 52 Z M90 45 L70 38 L55 45 L70 52 Z M50 45 L65 95 L50 80 L35 95 Z'/%3E%3C/svg%3E") no-repeat center;
     mask-size: contain;
 }
 
-/* Portfolio & Zoom */
+/* Portfolio */
 .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .pic { aspect-ratio: 1/1; overflow: hidden; border: 1px solid #eee; cursor: pointer; }
 .pic img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
@@ -109,12 +113,13 @@ h2 { font-family: 'Archivo', sans-serif; font-size: 28px; margin-bottom: 30px; }
 .form-container { background: white; padding: 30px; }
 input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; font-family: inherit; font-size: 15px; color: #333; }
 
-.cta-button { background: var(--accent); color: white; padding: 16px; text-transform: uppercase; font-weight: 700; font-size: 12px; border: none; cursor: pointer; display: block; text-align: center; text-decoration: none; }
+.cta-button { background: var(--terracotta); color: white; padding: 16px; text-transform: uppercase; font-weight: 700; font-size: 12px; border: none; cursor: pointer; display: block; text-align: center; text-decoration: none; }
+.cta-button:hover { background: #964a37; }
 
 footer { padding: 40px 0; text-align: center; font-size: 12px; color: #999; }
 
 @media (min-width: 992px) {
-    .header-frise { height: 25px; background-size: 18px 18px; } /* Retour à la taille fine sur PC */
+    .header-frise { height: 25px; background-size: 18px 18px; }
     .nav-container { flex-direction: row; justify-content: space-between; padding: 10px 15px; }
     .logo-wrapper { margin-bottom: 0; }
     .logo { font-size: 24px; }
