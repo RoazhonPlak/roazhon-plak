@@ -3,58 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roazhon Plak | Expertise Plâtrerie & Accompagnement technique</title>
+    <title>Roazhon Plak | Plâtrerie technique & Isolation Performance Rennes</title>
+    <meta name="description" content="Expert en isolation et plâtrerie sèche à Rennes. Spécialiste voûte sarrasine et finitions haut de gamme en Ille-et-Vilaine.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DrywallContractor",
+      "name": "Roazhon Plak",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rennes",
+        "postalCode": "35000",
+        "addressCountry": "FR"
+      }
+    }
+    </script>
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <div class="header-frise"></div>
         <div class="container nav-container">
             <div class="logo-wrapper">
-                <div class="logo">ROAZHON<span>PLAK</span></div>
+                <p class="logo">ROAZHON<span>PLAK</span></p>
             </div>
-            <ul class="nav-links">
-                <li><a href="#approche">Approche</a></li>
-                <li><a href="#prestations">Savoir-faire</a></li>
-                <li><a href="#portfolio">Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav role="navigation">
+                <ul class="nav-links">
+                    <li><a href="#approche">Approche</a></li>
+                    <li><a href="#prestations">Savoir-faire</a></li>
+                    <li><a href="#portfolio">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <div class="top-bar">
+        <div class="container">
+            <p class="elegant-intro">Isolation, aménagement et finitions sur le bassin Rennais.</p>
+        </div>
+    </div>
 
     <main>
         <section id="hero" class="hero">
             <div class="container">
-                <h1>MON ENGAGEMENT POUR<br>ACCOMPAGNER VOTRE PROJET.</h1>
-                <p class="subtitle">Isolation, aménagement et finitions sur le bassin Rennais.</p>
+                <span class="tag">Expertise Technique</span>
+                <h2 class="title-acier section-style-title">MON ENGAGEMENT POUR<br>ACCOMPAGNER VOTRE PROJET.</h2>
                 <div class="divider"></div>
-                <p class="accroche">
-                    Parce qu’un ouvrage réussi se définit dès la phase de conception, il est essentiel de déceler les points de blocage avant qu'ils ne deviennent des imprévus. Un détail non anticipé sur le papier, c'est un budget qui s'envole et une organisation de chantier qui déraille.<br><br>
-                    J’interviens à vos côtés dès l’étude du projet pour faciliter la mise en œuvre et sécuriser vos choix techniques. Cette expertise en amont permet d'anticiper les contraintes de réalisation et de garantir la sérénité du chantier jusqu’aux finitions.
-                </p>
-                <a href="#contact" class="cta-button">Parlons de votre projet</a>
+                <div class="content-with-image">
+                    <div class="text-side">
+                        <p class="accroche">
+                            Parce qu’un ouvrage réussi se définit dès la phase de conception, il est essentiel de déceler les points de blocage avant qu'ils ne deviennent des imprévus. Un détail non anticipé sur le papier, c'est un budget qui s'envolent et une organisation de chantier qui déraille.<br><br>
+                            J’interviens à vos côtés dès l’étude du projet pour faciliter la mise en œuvre et sécuriser vos choix techniques. Cette expertise en amont permet d'anticiper les contraintes de réalisation et de garantir la sérénité du chantier jusqu’aux finitions.
+                        </p>
+                        <a href="#contact" class="cta-button btn-hero">Lancer une étude de projet</a>
+                    </div>
+                    <div class="image-side">
+                        <img src="hero-chantier-conception.jpg" alt="Conception technique plâtrerie Rennes" onclick="openZoom(this)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-icons">
+                    <div class="trust-item">Garantie Décennale</div>
+                    <div class="trust-item">Normes NF / DTU</div>
+                    <div class="trust-item">Matériaux Certifiés</div>
+                    <div class="trust-item">Conseil Technique</div>
+                </div>
             </div>
         </section>
 
         <section id="approche" class="section-padding bg-light">
             <div class="container">
-                <span class="tag">Engagement</span>
-                <h2 class="title-acier">Une collaboration structurée</h2>
+                <span class="tag">Méthode</span>
+                <h2 class="title-acier">Ingénierie & Suivi de projet</h2>
                 <div class="grid-cards">
-                    <div class="card-simple">
-                        <h3>Analyse Technique</h3>
-                        <p>Étude approfondie du CCTP et des plans pour une proposition strictement conforme aux exigences du projet. Cette lecture rigoureuse permet d'identifer les points de complexité en amont pour assurer une mise en œuvre fidèle aux intentions architecturales.</p>
-                    </div>
-                    <div class="card-simple">
-                        <h3>Communication & Flux</h3>
-                        <p>Réactivité et fiabilité des échanges pour une coordination fluide. En tant qu'interlocuteur de confiance, j'assure un suivi administratif rigoureux et une communication transparente, facilitant ainsi l'enchaînement des interventions sur le terrain.</p>
-                    </div>
-                    <div class="card-simple">
-                        <h3>Supports Techniques</h3>
-                        <p>Production de documents d'exécution détaillés, de fiches techniques et d'un DOE rigoureux. Ces supports assurent la traçabilité de l'ouvrage et facilitent les opérations de contrôle et la réception du chantier.</p>
-                    </div>
+                    <article class="card-simple">
+                        <h3>Analyse Technique & Plans</h3>
+                        <p>Étude approfondie du CCTP et des plans pour une proposition strictement conforme aux exigences du projet. Cette lecture rigoureuse permet d'identifer les points de complexité en amont.</p>
+                        <div class="card-img-fix">
+                            <img src="analyse-technique.jpg" alt="Analyse de plans" onclick="openZoom(this)">
+                        </div>
+                    </article>
+                    <article class="card-simple">
+                        <h3>Coordination & Flux</h3>
+                        <p>Réactivité et fiabilité des échanges pour une coordination fluide. En tant qu'interlocuteur de confiance, j'assure un suivi administratif rigoureux et une communication transparente.</p>
+                    </article>
+                    <article class="card-simple">
+                        <h3>Dossier d'Ouvrage (DOE)</h3>
+                        <p>Production de documents d'exécution détaillés, de fiches techniques et d'un DOE rigoureux pour garantir la traçabilité de l'ouvrage.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -62,7 +110,7 @@
         <section id="prestations" class="section-padding">
             <div class="container">
                 <span class="tag">Savoir-faire</span>
-                <h2 class="title-acier">Maîtrise des systèmes et des matériaux</h2>
+                <h2 class="title-acier">Plâtrerie & Performance</h2>
                 <div class="grid-cards">
                     <div class="card-presta">
                         <h3 class="border-terra">Isolation & Performance</h3>
@@ -72,23 +120,28 @@
                             <li>Étanchéité à l'air et perspirance</li>
                             <li>Matériaux certifiés (Avis Techniques / DTA)</li>
                         </ul>
+                        <div class="card-img-fix">
+                            <img src="isolant-performance.jpg" alt="Mise en oeuvre isolation" onclick="openZoom(this)">
+                        </div>
                     </div>
                     <div class="card-presta">
                         <h3 class="border-terra">Aménagement & Finition</h3>
                         <ul>
-                            <li>Plâtrerie sèche : aménagement de vos espaces, pose de vos menuiseries intérieures.</li>
+                            <li>Plâtrerie sèche et aménagement d'espaces</li>
+                            <li>Pose de menuiseries intérieures</li>
                             <li>Plafonds techniques (acoustiques, coupe-feu...)</li>
                             <li>Aménagement de combles</li>
-                            <li>Enduits de finition et préparation des supports</li>
+                            <li>Enduits de finition haute qualité</li>
                         </ul>
                     </div>
                     <div class="card-presta">
                         <h3 class="border-terra">Ouvrages d'Art & Tradition</h3>
                         <ul>
-                            <li>Ouvrages en brique, enduits au plâtre traditionnel</li>
+                            <li>Ouvrages en brique, plâtre traditionnel</li>
                             <li>Escaliers sur voûte sarrasine ou catalane</li>
-                            <li>Créations décoratives : plafonds déportés, niches et bibliothèques sur-mesure...</li>
-                            <li>Travaux connexes : peinture, petite maçonnerie, joints ou enduits base chaux...</li>
+                            <li>Créations décoratives : plafonds déportés</li>
+                            <li>Bibliothèques sur-mesure en placo</li>
+                            <li>Joints et enduits base chaux</li>
                         </ul>
                     </div>
                 </div>
@@ -100,12 +153,12 @@
                 <span class="tag">Portfolio</span>
                 <h2 class="title-acier">Réalisations</h2>
                 <div class="gallery">
-                    <div class="pic"><img src="ossature-membrane.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
-                    <div class="pic"><img src="voute-pendant.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
-                    <div class="pic"><img src="voute-finie-1.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
-                    <div class="pic"><img src="voute-finie-2.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
-                    <div class="pic"><img src="plafond-arrondi.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
-                    <div class="pic"><img src="bibliotheque.jpg" alt="Réalisation" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="ossature-membrane.jpg" alt="Ossature technique" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="voute-pendant.jpg" alt="Voûte sarrasine en cours" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="voute-finie-1.jpg" alt="Voûte terminée" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="voute-finie-2.jpg" alt="Détail finition" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="plafond-arrondi.jpg" alt="Plafond courbe" onclick="openZoom(this)"></div>
+                    <div class="pic"><img src="bibliotheque.jpg" alt="Aménagement sur mesure" onclick="openZoom(this)"></div>
                 </div>
             </div>
         </section>
@@ -114,23 +167,34 @@
             <div class="container">
                 <div class="contact-flex">
                     <div class="contact-info">
-                        <span class="tag" style="color: var(--acier); opacity: 0.8;">Contact</span>
-                        <h2 style="color: #fff;">Un projet ?</h2>
-                        <div class="info-item" style="margin-bottom: 25px;">
-                            <strong style="color:white; display:block; margin-bottom:5px;">Appel direct</strong>
-                            <p><a href="tel:0761622362" style="color:white; text-decoration:none; font-weight: 600; font-size: 1.2rem;">07 61 62 23 62</a></p>
-                        </div>
-                        <div class="info-item">
-                            <strong style="color:white; display:block; margin-bottom:5px;">Localisation</strong>
-                            <p style="color:rgba(255,255,255,0.8);">Rennes & Bassin Rennais</p>
-                        </div>
+                        <span class="tag">Contact</span>
+                        <h2 style="color: #fff;">Un projet sur le Bassin Rennais ?</h2>
+                        <p style="color:rgba(255,255,255,0.7); margin-bottom: 30px;">Précisez votre profil et la nature de votre projet pour une réponse adaptée.</p>
+                        <p><a href="tel:0761622362" class="phone-link">07 61 62 23 62</a></p>
                     </div>
                     <div class="form-container">
-                        <form>
-                            <input type="text" placeholder="Nom complet" required>
-                            <input type="email" placeholder="Votre email" required>
-                            <textarea placeholder="Parlez-moi de votre projet..." rows="4" required></textarea>
-                            <button type="submit" class="cta-button" style="width: 100%;">Envoyer la demande</button>
+                        <form id="expertForm">
+                            <div class="form-row">
+                                <select name="profile" required>
+                                    <option value="" disabled selected>Vous êtes...</option>
+                                    <option value="particulier">Un Particulier</option>
+                                    <option value="architecte">Architecte / Maître d'œuvre</option>
+                                    <option value="constructeur">Constructeur / Promoteur</option>
+                                </select>
+                                <select name="project_type" required>
+                                    <option value="" disabled selected>Nature du projet...</option>
+                                    <option value="renovation">Rénovation</option>
+                                    <option value="neuf">Neuf</option>
+                                    <option value="voute">Ouvrage d'Art</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Nom / Entreprise" required>
+                            <div class="form-row">
+                                <input type="email" placeholder="Email" required>
+                                <input type="text" placeholder="Ville du projet" required>
+                            </div>
+                            <textarea placeholder="Description de votre projet..." rows="4" required></textarea>
+                            <button type="submit" class="cta-button" style="width: 100%;">Envoyer la demande d'étude</button>
                         </form>
                     </div>
                 </div>
@@ -138,28 +202,35 @@
         </section>
     </main>
 
-    <div id="zoomBox" class="zoom-modal" onclick="closeZoom()">
-        <span class="zoom-close">&times;</span>
-        <img id="zoomImg" src="" alt="Zoom réalisation">
-    </div>
-
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p><strong>ROAZHON PLAK</strong> | 2025</p>
+            <div class="footer-grid">
+                <div>
+                    <p class="logo">ROAZHON<span>PLAK</span></p>
+                    <p>Expertise Plâtrerie & Accompagnement technique</p>
+                </div>
+                <div>
+                    <p class="footer-title">Zone d'intervention</p>
+                    <p>Rennes Métropole & Ille-et-Vilaine (35).</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>ROAZHON PLAK</strong></p>
+            </div>
         </div>
     </footer>
 
+    <div id="zoomBox" class="zoom-modal" onclick="closeZoom()"><img id="zoomImg"></div>
+
     <script>
-        function openZoom(el) {
-            const box = document.getElementById('zoomBox');
-            const img = document.getElementById('zoomImg');
-            box.style.display = "flex";
-            img.src = el.src;
-            document.body.style.overflow = "hidden";
+        function openZoom(el){
+            document.getElementById('zoomBox').style.display="flex";
+            document.getElementById('zoomImg').src=el.src;
+            document.body.style.overflow="hidden";
         }
-        function closeZoom() {
-            document.getElementById('zoomBox').style.display = "none";
-            document.body.style.overflow = "auto";
+        function closeZoom(){
+            document.getElementById('zoomBox').style.display="none";
+            document.body.style.overflow="auto";
         }
     </script>
 </body>
